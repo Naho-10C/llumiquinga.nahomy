@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
-    public static void muestraContenido(String archivo) throws FileNotFoundException, IOException { 
+    public static void nllMuestraContenido(String archivo) throws FileNotFoundException, IOException { 
 	String linea; 
 	FileReader f = new FileReader(archivo); 
 	BufferedReader b = new BufferedReader(f); 
@@ -51,9 +51,9 @@ public class App {
                case 2:
                 System.out.println("\033[H\033[2J");
                 System.out.println("[+] Listado de Titulos");
-                muestraContenido("src\\ARCHIVOS\\202110105-CHUNCHO JIMENEZ ANGEL DAVID.csv");
-                muestraContenido("src\\ARCHIVOS\\202111083-HIDALGO CRUZ PABLO ESTEBAN.csv");
-                muestraContenido("src\\ARCHIVOS\\202120757-ALEMAN OSORIO CARLOS ALEJANDRO.csv");
+                nllMuestraContenido("src\\ARCHIVOS\\202110105-CHUNCHO JIMENEZ ANGEL DAVID.csv");
+                nllMuestraContenido("src\\ARCHIVOS\\202111083-HIDALGO CRUZ PABLO ESTEBAN.csv");
+                nllMuestraContenido("src\\ARCHIVOS\\202120757-ALEMAN OSORIO CARLOS ALEJANDRO.csv");
                    break;
                 case 3:
                 System.out.println("\033[H\033[2J");
